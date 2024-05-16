@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de gestion de serveurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/icon" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <a href="main.html" class="back-button"><img src="images/en-arriere.png" alt="Retour"></a>
+        <h1>Interface de gestion de serveurs</h1>
+    </header>
+
+    <section id="servers">
+        <h2><img src="images/servers.png" alt="Serveurs"> Serveurs</h2>
+        <form id="serverForm">
+            <label for="serverName">Nom du serveur:</label>
+            <input type="text" id="serverName" name="serverName">
+            <input type="submit" value="Ajouter serveur">
+        </form>
+
+        <table id="serverTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="serverTypes">
+        <h2><img src="images/typing.png" alt="Types de serveurs"> Types de serveurs</h2>
+        <form id="serverTypeForm">
+            <label for="serverType">Type de serveur:</label>
+            <input type="text" id="serverType" name="serverType">
+            <input type="submit" value="Ajouter type de serveur">
+        </form>
+
+        <table id="serverTypeTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section id="users">
+        <h2><img src="images/user.png" alt="Utilisateurs"> Utilisateurs</h2>
+        <form id="userForm">
+            <label for="userName">Nom d'utilisateur:</label>
+            <input type="text" id="userName" name="userName">
+            <input type="submit" value="Ajouter un nouvel Utilisateur">
+        </form>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Utilisateur</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
