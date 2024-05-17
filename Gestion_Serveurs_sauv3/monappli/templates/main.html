@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Principale</title>
+    {% load static %}
+    <link rel="stylesheet" href={% static "monappli/style.css"%}>
+</head>
+
+<body>
+
+  <nav class="menu">
+    <ol>
+
+      <li class="menu-item">
+        <a href="#0">Serveurs</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Gestion_Serveurs/indexserveurs">Index</a></li>
+          <li class="menu-item"><a href="/Gestion_Serveurs/ajoutserveurs">Ajouter</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Type de serveurs</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Gestion_Serveurs/indextype_serveurs">Index</a></li>
+          <li class="menu-item"><a href="/Gestion_Serveurs/ajouttype_serveurs">Ajouter</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Services</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Gestion_Serveurs/indexservices">Index</a></li>
+          <li class="menu-item"><a href="/Gestion_Serveurs/ajoutservices">Ajouter</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Utilisateurs</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Gestion_Serveurs/indexutilisateurs">Index</a></li>
+          <li class="menu-item"><a href="/Gestion_Serveurs/ajoututilisateurs">Ajouter</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Applications</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Gestion_Serveurs/indexapplications">Index</a></li>
+          <li class="menu-item"><a href="/Gestion_Serveurs/ajoutapplications">Ajouter</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="#0">Acceuil</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="#0">Index</a></li>
+          <li class="menu-item"><a href="#0">Ajouter</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+
+          
+
+
+
+
+  {% block body%}
+
+
+
+
+
+  {% endblock body%}
+
+
+
+  
+
+
+
+
+</body>
+</html>

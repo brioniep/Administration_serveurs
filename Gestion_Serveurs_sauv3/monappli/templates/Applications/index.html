@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+<ol>
+    {% for a in liste %}
+        <li> {{a}} <a href="/Gestion_Serveurs/afficheapplications/{{a.id}}/"> Affiche </a> <a href="/Gestion_Serveurs/updateapplications/{{a.id}}/"> Update </a> <a href="/Gestion_Serveurs/deleteapplications/{{a.id}}/"> Delete </a> </li>
+    {% endfor %}
+</ol>
+    
+{% endblock body %}

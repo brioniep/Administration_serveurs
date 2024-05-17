@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+<ol>
+    {% for s in liste %}
+        <li> {{s}} <a href="/Gestion_Serveurs/afficheserveurs/{{s.id}}/"> Affiche </a> <a href="/Gestion_Serveurs/updateserveurs/{{s.id}}/"> Update </a> <a href="/Gestion_Serveurs/deleteserveurs/{{s.id}}/"> Delete </a> </li>
+    {% endfor %}
+</ol>
+
+    
+{% endblock body %}

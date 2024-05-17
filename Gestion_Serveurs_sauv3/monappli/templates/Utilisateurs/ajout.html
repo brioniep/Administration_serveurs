@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+    
+{% if id is not None%}
+
+
+<form action="/Gestion_Serveurs/updatetraitementutilisateurs/{{id}}/" method="post" id="formulaire">
+
+    {% else %}
+    <form action="/Gestion_Serveurs/traitementutilisateurs/" method="post" id="formulaire">
+    {% endif %}
+    
+    <h1>Saisie d'un nouvel utilisateur ! </h1>
+        {% csrf_token %}
+        {{form.as_ul}}
+        <input type="submit" value="envoyer les données">
+    
+    </form>
+    
+{% endblock body %}
