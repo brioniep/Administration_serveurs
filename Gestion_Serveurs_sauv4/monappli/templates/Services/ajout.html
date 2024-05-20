@@ -1,0 +1,62 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+
+    {% if id is not None%}
+    
+    <form action="/Gestion_Serveurs/updateservices/{{id}}/" method="post" id="formulaire">
+    
+    {% else %}
+    <form action="/Gestion_Serveurs/traitementservices/" method="post" id="formulaire">
+    {% endif %}
+    
+        {% csrf_token %}
+
+        <div class="signupSection">
+    
+            <div class="info">
+                <h2>Saisie d'un nouveau service ! </h2>
+                <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non adipisci illo quae quidem rem ullam nostrum quos alias, iusto ad porro minus nesciunt accusamus, ab aperiam maxime reprehenderit impedit!</p>
+            </div>
+        
+        
+            <ul class="noBullet">
+        
+                <li>
+                    <label for="id_nom_services">Nom du service : </label>
+                    <input type="text" name="id_nom_services" maxlength="100" id="id_nom_services" class="inputFields">
+                </li>
+                <li>
+                    <label for="id_date_lancement">Date de lancement : </label>
+                    <input type="text" name="date_lancement" maxlength="100" id="id_date_lancement" class="inputFields">
+                </li>
+                <li>
+                    <label for="id_espace_memoire_utilise">Espace mémoire utilisé : </label>
+                    <input type="text" name="espace_memoire_utilise" maxlength="100" id="id_espace_memoire_utilise" class="inputFields">
+                </li>
+                <li>
+                    <label for="id_memoire_vive_necessaire">Mémoire vive necessaire : </label>
+                    <input type="text" name="memoire_vive_necessaire" maxlength="100" id="id_memoire_vive_necessaire" class="inputFields">
+                </li>
+                <li>
+                    <label for="id_serveur_de_lancement">serveur de lancement : </label>
+                    <input type="text" name="serveur_de_lancement" maxlength="100" id="id_serveur_de_lancement" class="inputFields">
+                </li>
+                <li id="center-btn">
+                    <input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer les données">
+                </li>
+        
+            </ul>
+        
+        </div>
+    
+    </form>
+
+    
+{% endblock body %}

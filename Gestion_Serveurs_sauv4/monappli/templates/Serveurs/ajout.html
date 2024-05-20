@@ -1,0 +1,72 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+    
+{% if id is not None%}
+    
+<form action="/Gestion_Serveurs/updatetraitementserveurs/{{id}}/" method="post" id="formulaire">
+
+{% else %}
+<form action="/Gestion_Serveurs/traitementserveurs/" method="post" id="formulaire">
+{% endif %}
+
+
+
+
+
+
+    {% csrf_token %}
+
+
+
+<div class="signupSection">
+    
+    <div class="info">
+        <h2>Saisie d'un nouveau serveur ! </h2>
+        <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non adipisci illo quae quidem rem ullam nostrum quos alias, iusto ad porro minus nesciunt accusamus, ab aperiam maxime reprehenderit impedit!</p>
+    </div>
+
+
+    <ul class="noBullet">
+
+        <li>
+            <label for="id_nom_serveurs">Nom du serveur : </label>
+            <input type="text" name="nom_serveurs" maxlength="100" id="id_nom_serveurs" class="inputFields">
+        </li>
+        <li>
+            <label for="id_type_serveurs">Type de serveur : </label>
+            <input type="text" name="type_serveurs" maxlength="100" id="id_type_serveurs" class="inputFields">
+        </li>
+        <li>
+            <label for="id_nombre_processeurs">Nombre processeurs : </label>
+            <input type="text" name="nombre_processeurs" maxlength="100" id="id_nombre_processeurs" class="inputFields">
+        </li>
+        <li>
+            <label for="id_capacite_memoire">Capacité mémoire : </label>
+            <input type="text" name="capacite_memoire" maxlength="100" id="id_capacite_memoire" class="inputFields">
+        </li>
+        <li>
+            <label for="id_capacite_stockage">Capacité stockage : </label>
+            <input type="text" name="capacite_stockage" maxlength="100" id="id_capacite_stockage" class="inputFields">
+        </li>
+        <li id="center-btn">
+            <input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer les données">
+        </li>
+
+    </ul>
+
+</div>
+
+</form>
+
+
+
+
+    
+{% endblock body %}

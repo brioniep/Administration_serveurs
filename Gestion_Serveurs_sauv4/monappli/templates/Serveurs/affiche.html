@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+<div class="affichage_données"> 
+
+    <h1 class="titre_affiche">Affichage de la formation ! </h1>
+
+    <h2>Formation : </h2> {{Serveurs.nom_serveurs}}
+    <h2>Description de la formation : </h2> {{Serveurs.type_serveurs}}
+    <h2>Débouchés de la formation : </h2> {{Serveurs.nombre_processeurs}}
+    <h2>Description de la formation : </h2> {{Serveurs.capacite_memoire}}
+    <h2>Débouchés de la formation : </h2> {{Serveurs.capacite_stockage}}
+
+    
+
+</div>
+
+    
+{% endblock body %}
