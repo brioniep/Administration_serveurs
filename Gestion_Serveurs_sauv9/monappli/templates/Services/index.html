@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+
+
+
+<ol class="ordre_infos">
+    {% for se in liste %}
+
+
+
+
+
+    <div class="affiches">
+
+        <li class="nom_affiches"> {{se}} </li>
+
+        <div class="liens_CRUD2">
+            <a id ="R" href="/Gestion_Serveurs/afficheservices/{{se.id}}/"> Affiche </a> 
+            <a id="U" href="/Gestion_Serveurs/updateservices/{{se.id}}/"> Update </a> 
+            <a id="D" href="/Gestion_Serveurs/deleteservices/{{se.id}}/"> Delete </a> 
+        </div>
+
+    </div>
+
+
+
+
+
+        
+    {% endfor %}
+</ol>
+
+    
+{% endblock body %}
