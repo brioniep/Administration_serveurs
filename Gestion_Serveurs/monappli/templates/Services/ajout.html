@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+{% if id is not None%}
+
+
+<form action="/Gestion_Serveurs/updatetraitementservices/{{id}}/" method="post" id="formulaire" enctype="multipart/form-data">
+
+    {% else %}
+    <form action="/Gestion_Serveurs/traitementservices/" method="post" id="formulaire">
+    {% endif %}
+
+
+
+
+        {% csrf_token %}
+
+    <div class="signupSection">
+
+        <div class="info">
+            <h2>Saisie d'un nouveau service ! </h2>
+            <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+            <p>Vous pouvez ici ajouter des nouveaux services, les services sont déployer sur les serveur créer. Vous aurez la possibilité de télcharger tout les services disponible sur un serveur.</p>
+        </div>
+
+
+        <ul class="noBullet">
+
+
+
+            <div class="formulaires">
+        {{form.as_ul}}
+            </div>
+
+
+
+
+        <li id="center-btn">
+            <input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer les données">
+        </li>
+        </ul>
+
+    </div>
+
+    </form>
+
+    
+{% endblock body %}
