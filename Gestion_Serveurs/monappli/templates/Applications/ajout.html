@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+
+
+
+
+
+{% block body %}
+
+{% if id is not None%}
+
+
+<form action="/Gestion_Serveurs/updatetraitementapplications/{{id}}/" method="post" id="formulaire">
+
+    {% else %}
+    <form action="/Gestion_Serveurs/traitementapplications/" method="post" id="formulaire" enctype="multipart/form-data">
+    {% endif %}
+
+
+
+
+        {% csrf_token %}
+
+    <div class="signupSection">
+
+        <div class="info">
+            <h2>Saisie d'une nouvelle application ! </h2>
+            <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+            <p>Vous pouvez ici ajouter des nouvelles applications. Avant d'ajouter une application, veuillez bien vérifier si un utilisateur a été créé.Vous avez aussi la possibilitée d'importer le logo de l'application afin de la rendre plus attractive.</p>
+        </div>
+
+
+        <ul class="noBullet">
+
+
+
+            <div class="formulaires">
+        {{form.as_ul}}
+            </div>
+
+
+
+
+        <li id="center-btn">
+            <input type="submit" id="join-btn" name="join" alt="Join" value="Envoyer les données">
+        </li>
+        </ul>
+
+    </div>
+
+    </form>
+
+    
+{% endblock body %}
