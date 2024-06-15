@@ -14,3 +14,12 @@ Vous devez implémenter un CRUD pour chacun de ces types de données. vous prép
 Votre site web pourra permettre la saisie de nouveaux serveurs, services  et application. L'ajout de service et d'application vérifiera que l'espace mémoire et le nombre de processeur est suffisant sur la machine. Vous pourrez aussi insérer une application et ses services associés déployé sur un serveur à l'aide d'un fichier. La structure du fichier attendu se trouvera dans le site web
 
 Vous aurez la possibilité de générer une fiche des services lancés sur un serveur. 
+
+
+
+
+
+----------------------------------------------------------
+Diagramme de GANT
+
+![image](https://github.com/brioniep/Administration_serveurs/assets/147743931/003f4998-eeb4-4467-9025-bdcfcc7d4e1b)
