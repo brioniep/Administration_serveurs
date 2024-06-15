@@ -22,3 +22,5 @@ _______________________________________________________
 <h2>Diagramme de GANT</h2>
 
 ![image](https://github.com/brioniep/Administration_serveurs/assets/147743931/003f4998-eeb4-4467-9025-bdcfcc7d4e1b)
+
+Ce diagramme représenta la répartition du travail fournis durant le projet
