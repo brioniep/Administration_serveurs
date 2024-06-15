@@ -18,8 +18,7 @@ Vous aurez la possibilité de générer une fiche des services lancés sur un se
 
 
 
-
-----------------------------------------------------------
-<h1>Diagramme de GANT</h1>
+_______________________________________________________
+<h2>Diagramme de GANT</h2>
 
 ![image](https://github.com/brioniep/Administration_serveurs/assets/147743931/003f4998-eeb4-4467-9025-bdcfcc7d4e1b)
